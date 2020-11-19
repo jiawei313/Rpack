@@ -1,0 +1,52 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753)
+```
+
+# Introduction
+this is a package contains 4 functions using R. This package is constructed in Fall 2020.
+
+# First function
+```{r}
+x <- c(179,160,136,227)
+MATH4753::myf(x)
+```
+
+
+# Second function
+```{r}
+MATH4753::mybin(100,10,0.5)
+```
+
+
+# third function
+```{r}
+set.seed(23); x = rnorm(30,mean=10,sd=12)
+MATH4753::myci(x)
+```
+
+
+# Forth function
+```{r}
+w = MATH4753::myclt(n=10,iter=10000)
+```
+
+#The github repository
+
+
+
